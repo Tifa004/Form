@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    * {
+  outline: 1px solid red; /* Highlights boundaries of every element */
+}
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+
+}
+
+img[src^="leaf.avif"] {
+    height: 100vh;
+    width: 40vw;
+}
+
+.right {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    position: relative;
+
+    
+}
+.odin-container{
+    background-color: rgba(58, 59, 56, 0.466);
+    width: 40vw;
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    
+}
+img[src^="odin"] {
+    height: 150px;
+}
+.odin{
+    width: auto;
+    font-family: 'myFont', sans-serif;
+    color: white;
+    object-fit: cover;
+    font-size: 120px;
+    margin: 0;
+}
+legend,p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight:bold;
+    color: rgb(0, 0, 0);
+    width: 55ch;
+}
+label {
+    font-family: 'Roboto',sans-serif;
+    font-weight:normal;
+    
+}
+legend {
+    position: relative;
+    bottom: -25px;
+    
+
+}
+p,legend,label,input,button,.phone-group,span,#strength-container{
+    margin-left: 40px;
+}
+
+fieldset {
+    border: none;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    box-shadow: 0 5px 30px -15px rgb(121, 114, 114);
+    margin-bottom: 30px;
+    padding:40px 0 ;
+
+}
+#strength-container {
+
+    width: 281px;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+#strength-meter {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+#strength-text {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#errorMsg {
+    padding: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.row > .field {
+  flex: 1;  /* takes equal available width */
+  min-width: 0; /* prevents overflow */
+}
+
+.phone-group {
+  display: flex;
+  gap: 0;
+}
+.phone-group select{
+    border: 1px solid rgb(121, 114, 114);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.phone-group input {
+    border: 1px solid rgb(121, 114, 114);
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 200px;
+    margin: 0; 
+}
+
+label + input {
+    border: 1px solid rgb(121, 114, 114);
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 281px;
+    display: block;
+}
+
+input:focus {
+    outline:none;
+    border: 1px solid rgb(89, 109, 72);
+    box-shadow: 0 0 5px rgb(89, 109, 72);
+}
+
+input:invalid {
+    outline: none;
+    border: 1px solid rgb(121, 114, 114);
+    box-shadow: 0 0 5px rgb(121, 114, 114);
+}
+button {
+    background-color: rgb(121, 114, 114);
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1em;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(89, 109, 72);
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+    border: 1px solid rgb(89, 109, 72);
+    box-shadow: 0 0 5px rgb(89, 109, 72);
+}
+
+.login{
+    font-size: 1em;
+    width: 27ch;
+    margin-top: 20px;
+    font-weight: 200;
+    a{
+        font-weight: 600;
+        text-decoration: none;
+        color: rgb(89, 109, 72);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
